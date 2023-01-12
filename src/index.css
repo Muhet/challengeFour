@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color:#0a1930;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#experienceTwo{
+  display: none;
+}
+#experienceThree{
+  display: none;
+}
+#experienceFour{
+  display: none;
+}
+#experienceFive{
+  display: none;
+}
+#experienceSix{
+  display: none;
+}
+
+
+header.active{
+  background: #0a1930
+}
+
+.social{
+  cursor: pointer;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 1.5rem;
+ position: absolute;
+ bottom: 6rem;
+ color: gray;
+ padding-left: 40px;
+}
+
+.social a:hover{
+  color: aquamarine;
+  transform: translateY(-5px);
+}
+.nav{
+  background: #0a1930;
 }
